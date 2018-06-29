@@ -13,11 +13,8 @@ import Tabs from '../node_modules/react-bootstrap/lib/Tabs'
 import Tab from '../node_modules/react-bootstrap/lib/Tab'
 
 
-
-
 class App extends Component {
 
-  
   render() {
     return (
       <div className="App">
@@ -27,7 +24,6 @@ class App extends Component {
         </header>
         <Tabs defaultActiveKey={2} id="uncontrolled-tab-example">
           <Tab eventKey={1} title={<span><i className="material-icons">home</i></span>}>
-            Tab 1 content
           </Tab>
           <Tab eventKey={2} title={<span><i className="material-icons">insert_chart</i></span>}>
           </Tab>
@@ -35,7 +31,6 @@ class App extends Component {
             <FormParent/>
           </Tab>
             <Tab eventKey={4} title={<span><i className="material-icons">settings</i></span>}>
-            Tab 3 content
           </Tab>
         </Tabs>
       </div>
