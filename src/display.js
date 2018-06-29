@@ -11,7 +11,7 @@ export class Displayer extends React.Component{
 		var gval = grn.toString();
 		var rgbpass = "rgb(" + rval + "," + gval + ",0)";
 
-		if (this.props.total>6){
+		if (this.props.total>=7){
 			 var aud = new Audio(soundFile);
 			 aud.play();
 		}
