@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import {OurForm} from './form';
-import {DisplayerNoSound} from './displaynosound'
+import {Displayer} from './display'
 
 export class FormParent extends Component {
 
@@ -63,7 +63,7 @@ export class FormParent extends Component {
     return (
     	<div>
         <OurForm changeSum={this.changeSum} inputHandler={this.inputHandler}/>
-        <DisplayerNoSound total={this.state.total}/> 
+        <Displayer total={this.state.total}/> 
       </div>
     );
   }

@@ -3,16 +3,9 @@ import logo from './logo.svg';
 import './App.css';
 
 import {FormParent} from './FormParent'
-import Navbar from '../node_modules/react-bootstrap/lib/Navbar'
-import Nav from '../node_modules/react-bootstrap/lib/Nav'
-import NavItem from '../node_modules/react-bootstrap/lib/NavItem'
-import MenuItem from '../node_modules/react-bootstrap/lib/MenuItem'
-import NavDropdown from '../node_modules/react-bootstrap/lib/NavDropdown'
 
 import Tabs from '../node_modules/react-bootstrap/lib/Tabs'
 import Tab from '../node_modules/react-bootstrap/lib/Tab'
-
-import {Music} from './music'
 import {Iframe} from './iframe'
 import {SettingsContent} from './SettingsContent'
 import {Displayer} from './display'
@@ -33,7 +26,7 @@ class App extends Component {
   updateTotal(e) {
     e.preventDefault();
     console.log('hi');
-    this.setState({total: 7});
+    this.setState({total: 5});
   }
 
 

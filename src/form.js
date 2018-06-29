@@ -6,7 +6,6 @@ export class OurForm extends React.Component{
 		this.state = {new1: '',
 			new2: '',
 			new3: '',
-			new3: '',
 			new4: '',
 			new5: '',
 			new6: ''};
