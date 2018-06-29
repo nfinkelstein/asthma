@@ -1,7 +1,7 @@
 import React from "react";
 import soundFile from './alert.mp3';
 
-export class Displayer extends React.Component{
+export class DisplayerNoSound extends React.Component{
 
 	render(){
 		var red = 25.5 * parseFloat(this.props.total);
@@ -10,11 +10,6 @@ export class Displayer extends React.Component{
 		var rval = red.toString();
 		var gval = grn.toString();
 		var rgbpass = "rgb(" + rval + "," + gval + ",0)";
-
-		if (this.props.total>6){
-			 var aud = new Audio(soundFile);
-			 aud.play();
-		}
 
 
 		return (
