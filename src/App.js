@@ -16,6 +16,8 @@ import {Music} from './music'
 import {Iframe} from './iframe'
 import {SettingsContent} from './SettingsContent'
 import {Displayer} from './display'
+import {DisplayerNoSound} from './displaynosound'
+
 
 class App extends Component {
 
@@ -48,7 +50,7 @@ class App extends Component {
           <Tab eventKey={1} title={<span><i className="material-icons">home</i></span>}>
           <h1> Welcome Back Dan! </h1>
           <h3> Your current risk for an asthma attack is... </h3>
-          <Displayer total={this.state.total}/>
+          <DisplayerNoSound total={this.state.total}/>
           <br/>
           <h3> Last Asthma Attack: 6-29-2018 </h3>
 
